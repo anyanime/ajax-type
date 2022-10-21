@@ -39,6 +39,10 @@ function displayWords() {
 
 	suggestions.innerHTML = suggestionsListHtml;
 
+    if(this.value.length == 0) {
+       return suggestions.innerHTML = '';
+    }
+
 }
 
 
